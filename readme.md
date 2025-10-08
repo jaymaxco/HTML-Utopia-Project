@@ -37,22 +37,21 @@ This allows you to change typography, colors, and spacing globally without rewri
 
 ### Most Commonly Edited Variables
 
-#### 🎨 Colors  
+#### 🎨 Colors
+
 Generated with [Realtime Colors](https://www.realtimecolors.com)
 
-`css
---contrast: light-dark(#0d0d0a, #f6f7f4);
---background: light-dark(#c8ffcd, #0d0d0a);
---primary: #1c8f44;
---secondary: #067128;
---accent: #58f08b;`
+`--contrast: light-dark(#0d0d0a, #f6f7f4);`
+`--background: light-dark(#c8ffcd, #0d0d0a);`
+`--primary: #1c8f44;`
+`--secondary: #067128;`
+`--accent: #58f08b;`
 
 ### 🧱 Textures
 
 From [Transparent Textures](https://www.transparenttextures.com/)
 
-`css
---background-texture: url("https://www.transparenttextures.com/patterns/asfalt-light.png");`
+`--background-texture: url("https://www.transparenttextures.com/patterns/asfalt-light.png");`
 
 ### ✍️ Typography
 
@@ -60,54 +59,88 @@ Font stack and fluid type scale generated via [Utopia Type Calculator](https://u
 
 #### Font Families
 
-`--font-sans: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
---font-serif: "Roboto Serif", "Times New Roman", serif;`
+`--font-sans: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;`
+`--font-serif: "Roboto Serif", "Times New Roman", serif;`
 
 
 #### Type Scale
 
-`
---step--2: clamp(0.7035rem, 0.8117rem + -0.1353vw, 0.7813rem);
---step--1: clamp(0.9375rem, 0.9374rem + 0.0004vw, 0.9377rem);
---step-0: clamp(1.125rem, 1.0761rem + 0.2174vw, 1.25rem);
---step-1: clamp(1.35rem, 1.2263rem + 0.55vw, 1.6663rem);
---step-2: clamp(1.62rem, 1.3848rem + 1.0454vw, 2.2211rem);
---step-3: clamp(1.944rem, 1.5461rem + 1.7682vw, 2.9607rem);
---step-4: clamp(2.3328rem, 1.7013rem + 2.8067vw, 3.9467rem);
---step-5: clamp(2.7994rem, 1.8361rem + 4.281vw, 5.2609rem);
+`--step--2: clamp(0.7035rem, 0.8117rem + -0.1353vw, 0.7813rem);`
+`--step--1: clamp(0.9375rem, 0.9374rem + 0.0004vw, 0.9377rem);`
+`--step-0: clamp(1.125rem, 1.0761rem + 0.2174vw, 1.25rem);`
+`--step-1: clamp(1.35rem, 1.2263rem + 0.55vw, 1.6663rem);`
+`--step-2: clamp(1.62rem, 1.3848rem + 1.0454vw, 2.2211rem);`
+`--step-3: clamp(1.944rem, 1.5461rem + 1.7682vw, 2.9607rem);`
+`--step-4: clamp(2.3328rem, 1.7013rem + 2.8067vw, 3.9467rem);`
+`--step-5: clamp(2.7994rem, 1.8361rem + 4.281vw, 5.2609rem);`
 
---heading-line-height: 1.12;
---heading-character-spacing: -0.075rem;
---body-line-height: 1.5; `
+`--heading-line-height: 1.12;`
+`--heading-character-spacing: -0.075rem;`
+`--body-line-height: 1.5;`
 
 ## 🪶 Logo
 `--logo: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'/%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M8 4V20M17 12V20M6 20H10M15 20H19M13 7V4H3V7M21 14V12H13V14' stroke='%23c52f21' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");`
 
 ## 🧱 Project Structure
-- index.html
-- styles/
-  - base.css
-  - tokens.css
-  - components/
-    - header.css
-    - carousel.css
 - components/
-  - (HTML sections)
+    - body.html
+    - footer.html
+    - head.html
+    - header.html
+    - main.html
+- styles/
+    - reset.css
+    - styles.css
+- icons/
+    - Apple-lcon.svg
+    - Bluesky-Icon.svg
+    - Discord-Icon.svg
+    - Dribbble-Icon.svg
+    - Facebook-lcon.svg
+    - Figma-lcon.svg
+    - Github-Icon.svg
+    - Google-lcon.svg
+    - Instagram-Icon.svg
+    - LinkedIn-Icon.svg
+    - Medium-Icon.svg
+    - Messenger-Icon.svg
+    - Pinterest-lcon.svg
+    - Reddit-Icon.svg
+    - Signal-lcon.svg
+    - Snapchat-Icon.svg
+    - Spotify-Icon.svg
+    - Telegram-lcon.svg
+    - Threads-Icon.svg
+    - TikTok-Icon.svg
+    - Tumblr-Icon.svg
+    - Twitch-lcon.svg
+    - VK-lcon.svg
+    - WhatsApp-Icon.svg
+    - X (Twitter)-Icon.svg
+    - YouTube-Icon.svg
 - images/
-  - (carousel and assets)
+    - logo-icon.svg
+    - logo-partner-circle-wave.svg
+    - logo-partner-orange-eye.svg
+    - logo-partner-red-cube.svg
+    - Plumbing-Repair.avif
+    - stock-image.jpg
+- build.py
+- index.html
+- readme.md
 
 ## 🚀 Getting Started
 
 1. Clone the repository
-    - git clone https://github.com/jaymaxco/HTML-Utopia-Project.git
+    - `git clone https://github.com/jaymaxco/HTML-Utopia-Project.git`
 
-2. Open index.html in your browser.
+2. Open `index.html` in your browser.
 
 3. Adjust global variables in styles.css to match your brand or design palette.
 
 ## ⚙️ Customization Tips
 
-- Modify color and typography variables in styles.css.
+- Modify color and typography variables in `styles.css`.
 
 - Generate new type scales with utopia.fyi/type/calculator.
 
@@ -130,6 +163,12 @@ Font stack and fluid type scale generated via [Utopia Type Calculator](https://u
 [Realtime Colors](https://www.realtimecolors.com/)
 
 [Transparent Textures](https://www.transparenttextures.com/)
+
+[Social Media Icons](https://www.figma.com/community/file/839558611085349133)
+
+[Placeholder Logos](https://logoipsum.com/)
+
+[Google Fonts](https://fonts.google.com/)
 
 ## 🔮 Future Enhancements
 
